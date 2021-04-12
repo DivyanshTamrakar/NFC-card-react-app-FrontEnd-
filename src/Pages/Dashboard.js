@@ -23,26 +23,26 @@ import {URL} from '../config/config';
 export default function Dashboard() {
   const [loading,setLoading] = useState(false);
   const [countries,setCountries] = useState([]);
-  const [latitude,setLatitude] = useState("");
-  const [longitude,setLongitude] = useState("");
+  const [latitude,setLatitude] = useState(" ");
+  const [longitude,setLongitude] = useState(" ");
   const [profile,setProfile]=useState(UserPlaceholder);//
   const [profileTemp,setProfileTemp]=useState(UserPlaceholder);//
   const [profileType,setProfileType]=useState("image");
-  const [fname,setFname] = useState("");
-  const [lname,setLname] = useState("");
-  const [username,setUsername] = useState("");
-  const [position,setPosition] = useState("");
-  const [bio,setBio] = useState("");
-  const [email,setEmail] = useState("");
-  const [contact,setContact] = useState("");
-  const [country,setCountry] = useState("");
-  const [zip,setZip] = useState("");
-  const [facebook,setFacebook] = useState("");
-  const [website,setWebsite] = useState("");
-  const [twitter,setTwitter] = useState("");
-  const [linkedin,setLinkedin] = useState("");
-  const [greetings, setGreetings]=useState("");
-  const [greetFname,setGreetFname]=useState("");
+  const [fname,setFname] = useState(" ");
+  const [lname,setLname] = useState(" ");
+  const [username,setUsername] = useState(" ");
+  const [position,setPosition] = useState(" ");
+  const [bio,setBio] = useState(" ");
+  const [email,setEmail] = useState(" ");
+  const [contact,setContact] = useState(" ");
+  const [country,setCountry] = useState(" ");
+  const [zip,setZip] = useState(" ");
+  const [facebook,setFacebook] = useState(" ");
+  const [website,setWebsite] = useState(" ");
+  const [twitter,setTwitter] = useState(" ");
+  const [linkedin,setLinkedin] = useState(" ");
+  const [greetings, setGreetings]=useState(" ");
+  const [greetFname,setGreetFname]=useState(" ");
   const history = useHistory();
 
   useEffect(() => {
@@ -248,7 +248,10 @@ export default function Dashboard() {
                     <label className="btn btn-upload-image"><input type="file" id="files" hidden onChange={
                       (event)=>{
                         setProfile(event.target.files[0]);
-                        setProfileTemp(URL.createObjectURL(event.target.files[0]));
+                        var binaryData = [];
+                        binaryData.push(event.target.files[0]);
+                        setProfileTemp(window.URL.createObjectURL(new Blob(binaryData)));
+                        console.log(new Blob(binaryData));
                         var str = event.target.files[0].type;
                         var trimmedString = str.substring(0, 5);
                         setProfileType(trimmedString);
@@ -262,18 +265,18 @@ export default function Dashboard() {
                     <div className="row">
                       <div className="col-md-6 mb-4">
                         <label htmlFor="firstName">First name</label>
-                        <input type="text" className="form-control no-outline" id="firstName" name="firstName" placeholder="John" value={fname} onChange={(event)=>setFname(event.target.value)}    required />
+                        <input type="text" className="form-control no-outline" id="firstName" name="firstName" placeholder="John" value={fname || ''} onChange={(event)=>setFname(event.target.value)}    required />
                       </div>
                       <div className="col-md-6 mb-3">
                         <label htmlFor="lastName">Last name</label>
-                        <input type="text" className="form-control no-outline" id="lastName" name="lastName" placeholder="Doe" value={lname} onChange={(event)=>setLname(event.target.value)}    required />
+                        <input type="text" className="form-control no-outline" id="lastName" name="lastName" placeholder="Doe" value={lname || ''} onChange={(event)=>setLname(event.target.value)}    required />
                       </div>
                     </div>
                     <div className="mb-4">
                       <label htmlFor="salutation">Job Postiton/Salutation</label>
                       <div className="input-group">
                        
-                        <input type="text" className="form-control no-outline" id="salutation" name="salutation" placeholder="Job Postiton/Salutation" value={position} onChange={(event)=>setPosition(event.target.value)} required />
+                        <input type="text" className="form-control no-outline" id="salutation" name="salutation" placeholder="Job Postiton/Salutation" value={position || ''} onChange={(event)=>setPosition(event.target.value)} required />
                         
                       </div>
                     </div>
@@ -281,7 +284,7 @@ export default function Dashboard() {
                       <label htmlFor="salutation">Bio</label>
                       <div className="input-group">
                        
-                       <textarea name="bio" id="bio"  rows="5" maxLength={115} placeholder="Hello,I am John Doe I am a Senior Consultant at THEKNOWCARD" value={bio} required onChange={(event)=>setBio(event.target.value)} className="form-control-area no-outline"></textarea>
+                       <textarea name="bio" id="bio"  rows="5" maxLength={115} placeholder="Hello,I am John Doe I am a Senior Consultant at THEKNOWCARD" value={bio || ''} required onChange={(event)=>setBio(event.target.value)} className="form-control-area no-outline"></textarea>
                         
                       </div>
                     </div>
@@ -289,20 +292,20 @@ export default function Dashboard() {
                       <div className="col-md-6">
                         <div className="mb-3">
                           <label htmlFor="contact">Contact</label>
-                          <input type="contact" className="form-control no-outline" name="contact"  placeholder="+91 8456325468" value={contact} onChange={(event)=>setContact(event.target.value)} />
+                          <input type="contact" className="form-control no-outline" name="contact"  placeholder="+91 8456325468" value={contact || ''} onChange={(event)=>setContact(event.target.value)} />
                         </div>
                       </div>
                       <div className="col-md-6">
                         <div className="mb-3">
                           <label htmlFor="email">Email</label>
-                          <input type="email" className="form-control no-outline" name="email"  placeholder="john@example.com" value={email} onChange={(event)=>setEmail(event.target.value)} />
+                          <input type="email" className="form-control no-outline" name="email"  placeholder="john@example.com" value={email || ''} onChange={(event)=>setEmail(event.target.value)} />
                         </div>
                       </div>
                     </div>
                     <div className="row mt-3">
                       <div className="col-md-6 mb-3">
                         <label htmlFor="country">Country</label>
-                        <select className="custom-select d-block w-100 form-control" id="country" name="country" value={country} required onChange={(event)=>setCountry(event.target.value)}>
+                        <select className="custom-select d-block w-100 form-control" id="country" name="country" value={country || ''} required onChange={(event)=>setCountry(event.target.value)}>
                           <option value>Choose...</option>
                           {countryOption}
                         </select>
@@ -310,25 +313,25 @@ export default function Dashboard() {
                       
                       <div className="col-md-6 mb-3">
                         <label htmlFor="zip">Zip Code</label>
-                        <input type="text" className="form-control no-outline" name="zip" placeholder="650326" value={zip} required onChange={(event)=>setZip(event.target.value)} />
+                        <input type="text" className="form-control no-outline" name="zip" placeholder="650326" value={zip || ''} required onChange={(event)=>setZip(event.target.value)} />
                       </div>
                     </div>
                     <hr className="mb-4" />
                     <div className="mb-3">
                       <label htmlFor="website"><i className="fa fa-globe mr-1 text-dark"></i> Website</label>
-                      <input type="text" className="form-control no-outline" name="website" placeholder="www.theknowcard.com" value={website} required onChange={(event)=>setWebsite(event.target.value)} />
+                      <input type="text" className="form-control no-outline" name="website" placeholder="https://theknowcard.com" value={website || ''} required onChange={(event)=>setWebsite(event.target.value)} />
                     </div>
                     <div className="mb-3">
                       <label htmlFor="facebook"><i className="fa fa-facebook mr-2  text-dark"></i> Facebook <span className="text-muted">(Optional)</span></label>
-                      <input type="text" className="form-control no-outline" name="facebook" placeholder="www.facebook.com/JohnDoe" value={facebook} onChange={(event)=>setFacebook(event.target.value)} />
+                      <input type="text" className="form-control no-outline" name="facebook" placeholder="https://facebook.com/JohnDoe" value={facebook || ''} onChange={(event)=>setFacebook(event.target.value)} />
                     </div>
                     <div className="mb-3">
                       <label htmlFor="linkedin"><i className="fa fa-linkedin mr-2 text-dark"></i> LinkedIn <span className="text-muted">(Optional)</span></label>
-                      <input type="text" className="form-control no-outline" name="linkedin" placeholder="www.linkedin/johndoe" value={linkedin} onChange={(event)=>setLinkedin(event.target.value)} />
+                      <input type="text" className="form-control no-outline" name="linkedin" placeholder="https://linkedin/johndoe" value={linkedin || ''} onChange={(event)=>setLinkedin(event.target.value)} />
                     </div>
                     <div className="mb-3">
                       <label htmlFor="twitter"> <i className="fa fa-twitter mr-2 text-dark"></i> Twitter <span className="text-muted">(Optional)</span></label>
-                      <input type="text" className="form-control no-outline" name="twitter" placeholder="www.twitter.com/johndoe" value={twitter} onChange={(event)=>setTwitter(event.target.value)} />
+                      <input type="text" className="form-control no-outline" name="twitter" placeholder="https://twitter.com/johndoe" value={twitter || ''} onChange={(event)=>setTwitter(event.target.value)} />
                     </div>
                     <hr className="mb-4 mt-4" />
                     <button type="submit" className="btn btn-block btn-gradient p-2 no-outline" disabled={loading} >
@@ -403,22 +406,22 @@ export default function Dashboard() {
                     </div>
                     <div className="profile-footer">
                       <div className="p-2 ml-auto mr-auto">
-                        <a href="tel:+918962551464">
+                        <a href={"tel"+contact}>
                         <img src={Phone} style={{width:18,height:14}} className=" mr-3" alt="Phone"/>
                         </a>
-                        <a href="mailto:tx2terminator@gmail.com">
+                        <a href={"mailto:"+email}>
                           <img src={Mail} style={{width:18,height:12}}  className=" mr-3" alt="Mail"/>
                         </a>
-                        <a href="http://niteshvishwakarma.cyou">
+                        <a href={website}>
                          <img src={Website} style={{width:16,height:16}}  className=" mr-3" alt="Website"/>
                         </a>
-                        <a href="#fb">
+                        <a href={facebook}>
                           <img src={Facebook} style={{width:10,height:16}}  className=" mr-3" alt="Facebook"/>
                         </a>
-                        <a href="#ld">
+                        <a href={linkedin}>
                           <img src={LinkedIn} style={{width:16,height:16}}  className=" mr-3" alt="LinkedIn"/>
                         </a>
-                        <a href="#tw">
+                        <a href={twitter}>
                           <img src={Twitter} style={{width:20,height:16}}  className=" mr-3" alt="Twitter"/>
                         </a>
                         <a href={"https://www.google.com/maps/@"+latitude+","+longitude}>

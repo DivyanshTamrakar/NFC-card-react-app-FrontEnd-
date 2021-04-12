@@ -108,7 +108,7 @@ export default function MyAccount() {
                             (message !== "")?(
                                 <div className=" alert alert-success alert-dismissible fade show container mb-3"  role="alert" style={{backgroundColor:"green",borderRadius:5}}>
                                     <h6 className="text-center text-white" style={{fontSize:'0.9rem'}} >{message}</h6>
-                                    <button type="button" class="close text-white" data-dismiss="alert" aria-label="Close">
+                                    <button type="button" className="close text-white" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
@@ -159,7 +159,7 @@ export default function MyAccount() {
                                                         (passwordChange !== "")?(
                                                             <div className=" alert alert-success alert-dismissible fade show container-fluid mb-3"  role="alert" style={{backgroundColor:"green",borderRadius:5}}>
                                                                 <h6 className="text-center text-white mt-1" style={{fontSize:'1rem'}} >{passwordChange}</h6>
-                                                                <button type="button" class="close text-white" data-dismiss="alert" aria-label="Close">
+                                                                <button type="button" className="close text-white" data-dismiss="alert" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
                                                             </div>
@@ -172,7 +172,7 @@ export default function MyAccount() {
                                                         (passwordChangeError !== "")?(
                                                             <div className=" alert alert-danger alert-dismissible fade show container-fluid mb-3"  role="alert" style={{backgroundColor:"green",borderRadius:5}}>
                                                                 <h6 className="text-center text-white mt-1" style={{fontSize:'1rem'}} >{passwordChangeError}</h6>
-                                                                <button type="button" class="close text-white" data-dismiss="alert" aria-label="Close">
+                                                                <button type="button" className="close text-white" data-dismiss="alert" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
                                                             </div>

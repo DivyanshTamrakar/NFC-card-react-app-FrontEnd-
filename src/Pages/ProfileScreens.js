@@ -97,16 +97,16 @@ export default function ProfileScreens(props) {
                                 <a href={"mailto:"+profile.data.email} target="_blank" rel="noopener noreferrer">
                                     <img src={Email} className="mr-3 mt-1" alt="Phone" style={{width:'1.3rem',height:'1.0rem'}} />
                                 </a>
-                                <a href={"https://"+profile.data.website} target="_blank" rel="noopener noreferrer">
+                                <a href={profile.data.website} target="_blank" rel="noopener noreferrer">
                                     <img src={Website} className="mr-3 mt-1" alt="Phone" style={{width:'1.2rem',height:'1.2rem'}} />
                                 </a>
-                                <a href={"https://"+profile.data.facebook} target="_blank" rel="noopener noreferrer">
+                                <a href={profile.data.facebook} target="_blank" rel="noopener noreferrer">
                                     <img src={Facebook} className="mr-3 mt-1" alt="Phone" style={{width:'0.8rem',height:'1.2rem'}} />
                                 </a>
-                                <a href={"https://"+profile.data.linkedin} target="_blank" rel="noopener noreferrer">
+                                <a href={profile.data.linkedin} target="_blank" rel="noopener noreferrer">
                                     <img src={Linkedin} className="mr-3 mt-1" alt="Phone" style={{width:'1.2rem',height:'1.1rem'}} />
                                 </a>
-                                <a href={"https://"+profile.data.twitter} target="_blank" rel="noopener noreferrer">
+                                <a href={profile.data.twitter} target="_blank" rel="noopener noreferrer">
                                     <img src={Twitter} className="mr-3 mt-2" alt="Phone" style={{width:'1.4rem',height:'1.1rem'}} />
                                 </a>
                                 <a href={"https://www.google.com/maps/@"+profile.data.location.coordinates[0]+","+profile.data.location.coordinates[1]} target="_blank" rel="noopener noreferrer">

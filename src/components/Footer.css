@@ -1,0 +1,105 @@
+.bottom-footer {
+    background-image: url('../assets/bg2.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content !important;
+}
+
+.count-text {
+    padding-top: 8rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.text-free {
+    color: rgb(243, 243, 243) !important;
+    font-size: 1.0rem !important;
+}
+
+.email_txt_field {
+    padding: 0.5rem;
+    width: 17rem;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    outline: none;
+    box-shadow: none;
+}
+
+.footer {
+    position: relative;
+    height: 100% !important;
+    padding-top: 5rem;
+    width: 100% !important;
+}
+
+
+/* Footer */
+
+#button-addon1 {
+    color: #ffc371
+}
+
+i {
+    color: #ffffff;
+    font-size: 20px
+}
+
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic
+}
+
+.form-control.shadow-0:focus {
+    box-shadow: none
+}
+
+.display-3 {
+    font-family: 'Sanchez', serif
+}
+
+p {
+    font-family: 'Tajawal', sans-serif
+}
+
+.lead {
+    font-family: 'Sanchez 200', serif
+}
+
+.bg-grey {
+    background-color: rgba(238, 238, 238, 0.878) !important;
+}
+
+.footer-logo {
+    font-size: 1.7rem;
+}
+
+.btn-finiata-start {
+    background-color: rgb(255, 102, 0) !important;
+    width: 9rem !important;
+    height: 45px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0rem 0.5rem !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    .btn-finiata-start {
+        background-color: rgb(255, 102, 0) !important;
+        width: 6rem !important;
+        height: 45px;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0rem 0.4rem !important;
+        color: white !important;
+        border-radius: 5px;
+    }
+}

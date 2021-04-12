@@ -1,0 +1,1 @@
+export const URL = "http://nfc-api.ap-south-1.elasticbeanstalk.com";

@@ -1,0 +1,27 @@
+.btn-send {
+    width: 150px !important;
+    border-radius: 50px !important;
+    background-color: rgb(255, 89, 0) !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+.bottom-nav {
+    background-color: #fff !important;
+    position: absolute;
+    bottom: 0% !important;
+    width: 100%;
+    height: 50px;
+    z-index: 1 !important;
+}
+
+.contact-container {
+    height: 90vh !important;
+}
+
+.card-container {
+    position: relative;
+    height: 100% !important;
+    border: none !important;
+}

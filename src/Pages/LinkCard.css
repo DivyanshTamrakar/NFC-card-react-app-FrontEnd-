@@ -1,0 +1,650 @@
+.mobile-mockup {
+    border-left: 1px solid #ddd;
+    height: 150vh;
+}
+
+.link-url {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-height {
+    height: 60px;
+    background-color: #fff !important;
+}
+
+.iphone-mockup {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    padding: 25px;
+    margin-top: 325px !important;
+    justify-content: center;
+}
+
+.analytics {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.justify-content-between {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.analyitcs-image {
+    width: 100%;
+    height: 250px !important;
+    padding: 0%;
+    margin: 0%;
+    object-fit: cover;
+}
+
+.links {
+    width: 85% !important;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(242, 242, 242);
+    margin: 5px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100% !important;
+    overflow-y: scroll;
+    padding: 0%;
+    background-color: #fff !important;
+}
+
+
+/* width */
+
+.content::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* Track */
+
+.content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+.content::-webkit-scrollbar-thumb {
+    background: rgb(179, 179, 179);
+}
+
+
+/* Handle on hover */
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: rgb(111, 111, 111);
+}
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-footer {
+    background-color: rgba(0, 0, 0, 0.535);
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-info {
+    background-color: rgba(0, 0, 0, 0.535);
+    width: 90%;
+    height: 9rem;
+    position: absolute;
+    bottom: 12%;
+    left: 2%;
+    border-radius: 15px;
+    padding: 15px;
+    z-index: 1;
+}
+
+.profile-info-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(255, 68, 0);
+    letter-spacing: 0.5px;
+}
+
+.profile-info-salutation {
+    font-size: 0.5rem;
+    margin-top: -10px !important;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.profile-info-description {
+    color: #fff;
+    font-size: 0.55rem;
+    margin-top: 5px;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding-bottom: 10px !important;
+}
+
+.link-container {
+    width: 100%;
+    margin-top: 0%;
+    height: 92vh !important;
+    overflow-y: auto;
+}
+
+
+/* width */
+
+.link-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+.link-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+.link-container::-webkit-scrollbar-thumb {
+    background: rgb(179, 179, 179);
+}
+
+
+/* Handle on hover */
+
+.link-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(111, 111, 111);
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, rgb(255, 89, 0), rgb(255, 132, 0));
+    color: #fff !important;
+    border-radius: 8px !important;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, rgb(230, 80, 0), rgb(232, 120, 0));
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.fa-0-5x {
+    font-size: 0.6rem;
+}
+
+.fa-1x {
+    font-size: 1.1rem;
+}
+
+.fa-1-2x {
+    font-size: 1.0rem;
+}
+
+.edit-btn {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+}
+
+.fa-1-5x {
+    font-size: 1.4rem;
+}
+
+#custom-switch {
+    transform: scale(1.4) !important;
+}
+
+.no-outline {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.text-orange {
+    color: rgb(255, 123, 0);
+}
+
+.text-green {
+    color: rgb(0, 191, 22);
+}
+
+.modal-backdrop {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.add-link-container {
+    height: 350px !important;
+    padding-left: 0%;
+}
+
+.add-link-header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 0.2rem solid rgb(242, 242, 242);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .onclickArrow {
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transform: rotateZ(180deg);
+} */
+
+main {
+    display: flex;
+    flex: 1;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    transition: opacity 0.4s;
+}
+
+.title p {
+    font-size: 14vw;
+}
+
+.title .title__svg {
+    width: 17vw;
+    height: 34vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title .title__svg video {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.title .title__svg svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.title .title__svg svg text {
+    font-family: 'Montserrat', monospace;
+    text-transform: uppercase;
+    transform-origin: center center;
+    font-size: 3em;
+}
+
+.title .title__svg svg rect {
+    fill: #fff;
+}
+
+.title .title__svg svg>rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+    fill: #000;
+}
+
+.iphonex {
+    width: 19em;
+    height: 38em;
+    display: flex;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all cubic-bezier(0.36, 0.41, 0.38, 1) 0.4s;
+    z-index: 10;
+}
+
+.iphonex .back {
+    display: flex;
+    flex: 1;
+    margin: 0.2em;
+    border-radius: 3em;
+    position: absolute;
+    z-index: 1;
+    width: calc( 100% - 0.6em);
+    height: calc( 100% - 0.6em);
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 10em rgba(70, 70, 70, 0.1);
+    transition: all 0.4s;
+}
+
+.iphonex .front {
+    display: flex;
+    flex: 1;
+    background-color: #292c2d;
+    border-radius: 2.5em;
+    margin: 0.2em;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.iphonex .screen {
+    display: flex;
+    flex: 1;
+    background-color: #191b1c;
+    margin: 0.05em;
+    border-radius: 2.6em;
+    border: solid 0.2em #121415;
+    position: relative;
+    z-index: 10;
+}
+
+.iphonex .front__line {
+    background: linear-gradient(to right, #515455, #454748, #515455);
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 0.5em;
+    top: 10%
+}
+
+.iphonex .front__line-second {
+    top: 90%
+}
+
+.iphonex .screen .screen__view {
+    display: flex;
+    flex: 1;
+    margin: 0.6em;
+    border-radius: 2em;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.iphonex .screen .screen__view:before {
+    transform: translateY(100%) scaleX(1.4);
+    opacity: 1;
+    z-index: 40;
+    transition: all ease 0.6s;
+}
+
+.iphonex .screen .screen__view .hello {
+    font-size: 2.5em;
+    color: #fff;
+    position: absolute;
+    z-index: 60;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+    transform: translateY(40%);
+    font-weight: 600;
+}
+
+.iphonex .screen .screen__front {
+    position: absolute;
+    width: 50%;
+    background-color: #191b1c;
+    height: 1.8em;
+    border-radius: 0 0 0.9em 0.9em;
+    right: 25%;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.3em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    z-index: 999;
+}
+
+.iphonex .screen .screen__front-speaker {
+    background: #070808;
+    border-radius: 0.2em;
+    height: 0.35em;
+    width: 28%;
+}
+
+.iphonex .screen .screen__front-camera {
+    height: 0.35em;
+    width: 0.35em;
+    background: #272727;
+    margin-left: .5em;
+    border-radius: 50%;
+    margin-right: -0.8em;
+}
+
+.iphonex .phoneButtons {
+    width: 1em;
+    height: 6em;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to bottom, #212324, #2b2e31, #212324);
+    box-shadow: 0 0 0.4em rgba(255, 255, 255, 0.1) inset;
+    border-radius: 2px;
+}
+
+.iphonex .phoneButtons-right {
+    right: 0;
+    top: 30%;
+}
+
+.iphonex .phoneButtons-left {
+    left: 0;
+    top: 15%;
+    height: 3em;
+}
+
+.iphonex .phoneButtons-left2 {
+    left: 0;
+    top: 25%;
+    height: 5em;
+}
+
+.iphonex .phoneButtons-left3 {
+    left: 0;
+    top: calc( 25% + 6em);
+    height: 5em;
+}
+
+.form-control {
+    border: none !important;
+    background-color: rgb(240, 240, 240) !important;
+    border-radius: 0% !important;
+    border-bottom: 1px solid #ddd !important;
+    font-family: 'Montserrat';
+    font-weight: 500 !important;
+    height: 60px !important;
+}
+
+.form-control-area {
+    border: none !important;
+    background-color: rgb(240, 240, 240) !important;
+    border-radius: 0% !important;
+    border-bottom: 1px solid #ddd !important;
+    font-family: 'Montserrat';
+    font-weight: 500 !important;
+    width: 100% !important;
+    padding: 10px;
+}
+
+.profile-container {
+    width: 250px !important;
+    height: 250px !important;
+    margin-bottom: 80px !important;
+}
+
+.profile-image {
+    width: 250px !important;
+    height: 250px !important;
+    object-fit: cover;
+    border-radius: 25px !important;
+}
+
+label {
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+    color: rgb(125, 125, 125) !important;
+}
+
+.icon-size {
+    width: 18px;
+    height: 14px;
+}
+
+.second-profile {
+    width: 125px !important;
+    height: 125px !important;
+    position: absolute;
+    border-radius: 15px;
+    border: 1px solid rgb(212, 212, 212);
+    left: 27%;
+    right: 0%;
+    top: 10%;
+}
+
+.card-content-container {
+    width: 100% !important;
+    margin-top: 50px !important;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 25%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    padding: 0% !important;
+}
+
+.minicard {
+    width: 0.5rem !important;
+    height: 7rem !important;
+    border-radius: 15px;
+    border: 1px solid #eeeeee;
+}
+
+.second-profile-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.row-container {
+    display: 'flex';
+    flex-direction: row;
+    width: 90% !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 3px !important;
+}
+
+.mini-icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.9rem;
+}
+
+.back-icon-mini {
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+    width: 15px;
+    height: 15px;
+}
+
+@media (max-height: 40em) {
+    body {
+        font-size: 70%;
+    }
+    .iphonex {
+        width: 48vh;
+        height: 94vh;
+    }
+    .title .title__svg svg text {
+        font-size: 4em;
+    }
+}
+
+@media(max-width:768px) {
+    .links {
+        width: 100% !important;
+        height: inherit !important;
+    }
+    .link-container::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.col-md-4-custom {
+    position: relative;
+    min-height: 1px;
+}
+
+@media (min-width: 768px) {
+    .col-md-4-custom {
+        float: left;
+    }
+    .col-md-4-custom {
+        width: 27.5%;
+        padding: 0%;
+        margin: 5px;
+    }
+    .custom-width {
+        width: 72%;
+    }
+}
+
+@media (max-width: 380px) {
+    .col-md-4-custom {
+        float: left;
+    }
+    .col-md-4-custom {
+        width: 33.325111111%;
+    }
+}

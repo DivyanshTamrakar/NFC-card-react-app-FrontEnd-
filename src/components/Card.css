@@ -1,0 +1,45 @@
+.link-card {
+    width: 7.55rem;
+    height: 11rem;
+    border-radius: 25px !important;
+    margin: 0.13rem;
+}
+
+.link-card-content {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-top: 0.5rem;
+}
+
+.fb-icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.5rem;
+}
+
+.back-icon {
+    position: absolute;
+    right: 10%;
+    bottom: 8%;
+    width: 25px;
+    height: 25px;
+}
+
+.description {
+    padding-top: 01rem;
+    font-size: 0.75rem;
+    font-family: 'Montserrat';
+    padding-bottom: 30px;
+}
+
+.fa-1x {
+    font-size: 0.9rem;
+}

@@ -1,0 +1,104 @@
+.amount {
+    font-size: 40px;
+    font-weight: 700
+}
+
+.margins {
+    margin-top: 16px
+}
+
+.outline-button {
+    background-color: transparent !important;
+    border-color: #8E24AA !important;
+    color: #8E24AA
+}
+
+.outline-button:hover,
+.outline-button:active,
+.outline-button:visited,
+.outline-button:focus {
+    background-color: #8E24AA !important;
+    border-color: #8E24AA !important;
+    color: #fff;
+    outline: 0 !important;
+    box-shadow: none !important
+}
+
+.normal-button {
+    background-color: #8E24AA !important;
+    border-color: #8E24AA !important;
+    color: #fff
+}
+
+.normal-button:hover,
+.normal-button:active,
+.normal-button:visited,
+.normal-button:focus {
+    background-color: #760a92 !important;
+    border-color: #760a92 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color: #fff
+}
+
+.check i {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #b9f6ca82;
+    line-height: 38px;
+    font-size: 17px;
+    color: #00800085;
+    font-weight: 300
+}
+
+@media (max-width:768px) {
+    .desktop-show {
+        display: none;
+    }
+}
+
+.pricing-mobile nav>.nav.nav-tabs {
+    border: none;
+    color: #fff;
+    background: #272e38;
+    border-radius: 0;
+}
+
+.pricing-mobile nav>div a.nav-item.nav-link,
+nav>div a.nav-item.nav-link.active {
+    border: none;
+    padding: 18px 25px;
+    color: #fff;
+    background: #272e38;
+    border-radius: 0;
+}
+
+.pricing-mobile nav>div a.nav-item.nav-link.active:after {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #e74c3c;
+}
+
+.pricing-mobile .tab-content {
+    background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top: 5px solid #e74c3c;
+    border-bottom: 5px solid #e74c3c;
+    padding: 30px 25px;
+}
+
+.pricing-mobile nav>div a.nav-item.nav-link:hover,
+nav>div a.nav-item.nav-link:focus {
+    border: none;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 0;
+    transition: background 0.20s linear;
+}

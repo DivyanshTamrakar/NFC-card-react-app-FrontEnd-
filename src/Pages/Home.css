@@ -1,0 +1,464 @@
+.navbar__logo {
+    object-fit: contain !important;
+    width: 7rem;
+}
+
+.navbar__height {
+    height: 65px;
+    background-color: #fff !important;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    z-index: 1 !important;
+}
+
+.btn-signupforfree {
+    background-color: black;
+    color: white !important;
+    padding: 10px !important;
+    border-radius: 70px !important;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.nav-text {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: #000 !important;
+}
+
+.bg-image {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to bottom, #fff, #eeeeee);
+    height: 650px !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.bg-image .set {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+}
+
+.bg-image .set div {
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+
+.bg-image .set div:nth-child(1) {
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+}
+
+.bg-image .set div:nth-child(2) {
+    left: 35%;
+    animation: animate 11s linear infinite;
+    animation-delay: -9s;
+}
+
+.bg-image .set div:nth-child(3) {
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-delay: 0s;
+}
+
+.bg-image .set div:nth-child(4) {
+    left: 0%;
+    animation: animate 24s linear infinite;
+    animation-delay: -5s;
+}
+
+.bg-image .set div:nth-child(5) {
+    left: 85%;
+    animation: animate 16s linear infinite;
+    animation-delay: -10s;
+}
+
+.bg-image .set div:nth-child(6) {
+    left: 28%;
+    animation: animate 12s linear infinite;
+    animation-delay: -5s;
+}
+
+.bg-image .set div:nth-child(7) {
+    left: 12%;
+    animation: animate 18s linear infinite;
+}
+
+.bg-image .set div:nth-child(8) {
+    left: 55%;
+    animation: animate 8s linear infinite;
+}
+
+.bg-image .set div:nth-child(9) {
+    left: 38%;
+    animation: animate 8s linear infinite;
+}
+
+.bg-image .set div:nth-child(10) {
+    left: 64%;
+    animation: animate 14s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px)rotate(0deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-20px)rotate(-25deg);
+    }
+    40% {
+        transform: translateX(-20px)rotate(50deg);
+    }
+    60% {
+        transform: translateX(20px)rotate(75deg);
+    }
+    80% {
+        transform: translateX(-20px)rotate(120deg);
+    }
+    100% {
+        opacity: 0.7;
+        top: 110%;
+        transform: translateX(-20px)rotate(180deg);
+    }
+}
+
+.bg-image .set2 {
+    transform: scale(0.8)rotateY(270deg);
+}
+
+.bg-image .set3 {
+    transform: scale(1.2)rotateX(180deg);
+}
+
+.font-monserrat {
+    font-weight: 700 !important;
+    color: #1f222b !important;
+    font-family: 'Montserrat';
+}
+
+.font-p {
+    font-size: 1.5rem;
+    font-weight: 600 !important;
+    font-family: 'Montserrat';
+}
+
+.font-monserrat-h3 {
+    font-size: 1.8rem;
+    font-weight: 700 !important;
+    font-family: 'Montserrat';
+}
+
+.heading__finiata {
+    font-size: 1.9rem;
+    font-weight: 700 !important;
+    font-family: 'Montserrat';
+    line-height: 2.5rem;
+}
+
+.paragraph__finiata {
+    font-size: 0.8rem;
+    font-weight: 600 !important;
+    font-family: 'Montserrat';
+    line-height: 1.5rem;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.span-text {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border: 0.15rem solid rgb(157, 157, 157);
+    border-radius: 50px;
+    padding: 0.4rem 0.8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.btn-finiata-1 {
+    background-color: rgb(255, 102, 0) !important;
+    width: 11rem !important;
+    height: 45px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0rem 0.5rem !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.btn-finiata-start {
+    background-color: rgb(255, 102, 0) !important;
+    width: 9rem !important;
+    height: 45px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0rem 0.5rem !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.btn-finiata {
+    background-color: rgb(255, 102, 0) !important;
+    width: fit-content !important;
+    height: 45px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0rem 0.5rem !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.pricing {
+    background-image: url('../assets/bg2.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content !important;
+    margin-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.pricing-container {
+    padding-top: 5rem !important;
+}
+
+.pricing-container h5 {
+    color: rgb(220, 220, 220) !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+}
+
+.pricing-container h3 {
+    margin-top: 1rem !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+}
+
+.pricing .card {
+    border: none !important;
+    transition: all 0.2s !important;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.pricing hr {
+    margin: 1.5rem 0 !important;
+}
+
+.pricing .card-title {
+    margin: 0.5rem 0 !important;
+    font-size: 0.9rem !important;
+    letter-spacing: .1rem !important;
+    font-weight: bold !important;
+}
+
+.pricing .card-price {
+    font-size: 3rem !important;
+    margin: 0 !important;
+}
+
+.pricing .card-price .period {
+    font-size: 0.8rem !important;
+}
+
+.pricing ul li {
+    margin-bottom: 1rem !important;
+}
+
+.pricing .text-muted {
+    opacity: 0.7 !important;
+}
+
+.pricing .btn {
+    font-size: 80% !important;
+    border-radius: 5rem !important;
+    letter-spacing: .1rem !important;
+    font-weight: bold !important;
+    padding: 1rem !important;
+    opacity: 0.7 !important;
+    transition: all 0.2s !important;
+}
+
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+@media (min-width:768px) {
+    .finata .row .container .row .col-lg-6 {
+        display: flex;
+        flex-direction: column !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+.customer__review__container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.customer__review__container h3 {
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+
+.review__contianer {
+    background: rgb(255, 255, 255);
+    height: 200px;
+    width: 350px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.customer__name {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    margin-left: 0.5rem;
+    color: rgb(0, 0, 80) !important;
+}
+
+.customer__reviews {
+    width: 75% !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.7rem;
+    height: 90% !important;
+    color: rgb(36, 36, 36) !important;
+    text-align: left !important;
+}
+
+.bottom-footer {
+    background-image: url('../assets/bg2.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content !important;
+}
+
+.count-text {
+    padding-top: 8rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.text-free {
+    color: rgb(243, 243, 243) !important;
+    font-size: 1.0rem !important;
+}
+
+.email_txt_field {
+    padding: 0.5rem;
+    width: 17rem;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    outline: none;
+    box-shadow: none;
+}
+
+.footer {
+    position: relative;
+    height: 100% !important;
+    padding-top: 5rem;
+    width: 100% !important;
+}
+
+@media (max-width:768px) {
+    .review__contianer {
+        background: rgb(255, 255, 255);
+        height: 200px;
+        width: 450px;
+        border: 1px solid rgb(235, 235, 235);
+    }
+    .btn-finiata-start {
+        background-color: rgb(255, 102, 0) !important;
+        width: 6rem !important;
+        height: 45px;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0rem 0.4rem !important;
+        color: white !important;
+        border-radius: 5px;
+    }
+}
+
+
+/* Footer */
+
+#button-addon1 {
+    color: #ffc371
+}
+
+i {
+    color: #ffffff;
+    font-size: 20px
+}
+
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic
+}
+
+.form-control.shadow-0:focus {
+    box-shadow: none
+}
+
+.display-3 {
+    font-family: 'Sanchez', serif
+}
+
+p {
+    font-family: 'Tajawal', sans-serif
+}
+
+.lead {
+    font-family: 'Sanchez 200', serif
+}
+
+.bg-grey {
+    background-color: rgba(238, 238, 238, 0.878) !important;
+}
+
+.footer-logo {
+    font-size: 1.7rem;
+}

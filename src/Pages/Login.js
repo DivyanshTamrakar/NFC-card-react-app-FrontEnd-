@@ -5,6 +5,7 @@ import Logo from '../assets/Logo.png';
 import {Link} from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
 import {URL} from '../config/config';
+import NavbarTop from '../components/NavbarTop';
 
 export default function Login() {
     const[email,setEmail] = useState("");
@@ -45,14 +46,7 @@ export default function Login() {
     }
     return (
         <>
-             <Navbar  expand="lg" className="navbar__height " style={{borderBottom:'none'}}>
-                <Navbar.Brand  className="pl-lg-3">
-                    <Link to="/">
-                        <img src={Logo} alt="logo" className="navbar__logo"/>
-                    </Link>
-                </Navbar.Brand>
-
-            </Navbar>
+            <NavbarTop />
 
             <div className="login-form ">
             <div className="main-div ">

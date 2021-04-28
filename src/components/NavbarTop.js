@@ -2,11 +2,13 @@ import React,{useEffect,useState} from 'react';
 import './Navbar.css';
 import {Navbar,Nav } from 'react-bootstrap';
 import Logo from '../assets/Logo.png';
+import LogoHover from '../assets/Logo-name.png';
 import {  Link,useHistory } from 'react-router-dom';
 
 export default function NavbarTop() {
+    const [logo,setLogo]=useState(Logo);
     const [loggedin,setLoggedIn]=useState(false);
-    const [username,setUsername] = useState("Dashboard");
+    const [username,setUsername] = useState("My Account");
     const history = useHistory();
     useEffect(() => {
         if(localStorage.getItem('app-access-token')===null){
@@ -21,7 +23,7 @@ export default function NavbarTop() {
         <Navbar  expand="lg" className="navbar__height shadow-sm">
         <Navbar.Brand  className="pl-lg-3">
            <Link to="/">
-                <img src={Logo} alt="logo" className="navbar__logo"/>
+                <img src={logo} onMouseOver={()=>setLogo(LogoHover)} onMouseOut={()=>setLogo(Logo)} className="navbar__logo" alt="Logo"/>
            </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

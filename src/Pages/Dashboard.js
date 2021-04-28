@@ -17,6 +17,7 @@ import Website from '../assets/icons/website.png';
 import LinkedIn from '../assets/icons/linkedin.png';
 import Twitter from '../assets/icons/twitter.png';
 import Marker from '../assets/icons/mapmarker.png';
+import Logo from '../assets/Logo.png';
 import {NavLink, useHistory} from 'react-router-dom';
 import {URL} from '../config/config';
 
@@ -44,6 +45,7 @@ export default function Dashboard() {
   const [greetings, setGreetings]=useState(" ");
   const [greetFname,setGreetFname]=useState(" ");
   const history = useHistory();
+
 
   useEffect(() => {
         if(localStorage.getItem('app-access-token')===null ){
@@ -244,7 +246,7 @@ export default function Dashboard() {
                     {
                       (profileType==="image")?<img src={profileTemp} className="profile-image img-fluid img-thumbnail shadow" alt="ProfileImage"/>:<video playsInline controls={true} className="profile-image-video img-thumbnail img-fluid  shadow"   autoPlay loop > <source src={profileTemp} type="video/mp4"   /></video>
                     }
-                   
+
                     <label className="btn btn-upload-image"><input type="file" id="files" hidden onChange={
                       (event)=>{
                         setProfile(event.target.files[0]);
@@ -260,6 +262,7 @@ export default function Dashboard() {
                       } /><i className="fa fa-plus text-white mt-3"></i></label>
                     <h4 className=" p-3 text-center" style={{fontWeight:'600'}}>@{username}</h4>
                   </div>
+                  <h6 className="pt-2 text-center text-danger">Recommended image size: 1200 x 628 (in pixels)</h6>
                   <hr className="mb-4 mt-5" />
                   <form onSubmit={handleSubmit} encType="multipart/form-data" >
                     <div className="row">
@@ -404,7 +407,7 @@ export default function Dashboard() {
                        {bio}
                       </p>
                     </div>
-                    <div className="profile-footer">
+                    <div className="profile-footer-d">
                       <div className="p-2 ml-auto mr-auto">
                         <a href={"tel"+contact}>
                         <img src={Phone} style={{width:18,height:14}} className=" mr-3" alt="Phone"/>
@@ -428,6 +431,15 @@ export default function Dashboard() {
                           <img src={Marker} style={{width:12,height:16}}   alt="Marker"/>
                         </a>
                       </div>
+                      
+                </div>
+                <div className="bottom-nav-d ">
+                    <div className="row m-0 p-0 ">
+                        <div className="p-2 " style={{display:'flex',width:'100%',flexDirection:'row',justifyContent: 'space-between'}}>
+                            <img src={Logo} className="img-fluid img-logo-1 ml-2 mt-auto mb-auto" alt="Logo"/>
+                            <a href="#savecontact" className="btn btn-black-1">SAVE CONTACT</a>
+                        </div>
+                    </div>
                     </div>
                   </div>
                 </div>

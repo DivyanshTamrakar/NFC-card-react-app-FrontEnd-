@@ -1,9 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import './Register.css';
 import Logo from '../assets/Logo.png';
+import LogoHover from '../assets/Logo-name.png';
 import {Modal} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
 import {Link} from 'react-router-dom';
+import validator from 'validator';
+import NavbarTop from '../components/NavbarTop';
 // Masthead
 import FB  from '../assets/masthead/facebook.png';
 import IG  from '../assets/masthead/instagram.png';
@@ -18,6 +21,7 @@ import YT  from  '../assets/masthead/youtube.png';
 import {URL} from '../config/config';
 
 export default function Register() {
+    const [logo,setLogo]=useState(Logo);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -30,6 +34,29 @@ export default function Register() {
     const [category,setCategory] = useState("");
     const [disabled,setDisabled] = useState(false);
     const [error,setError] = useState("");
+
+    const [errorMessage, setErrorMessage] = useState('');
+    const [cPassworErrorMessage, setPasswordErrorMessage] = useState('');
+  
+    const validate = (value) => {
+    
+        if (validator.isStrongPassword(value, {
+        minLength: 8
+        })) {
+        setErrorMessage('Your password is strong');
+        } else {
+        setErrorMessage('Your password is not strong and minimum 8 characters required');
+        }
+    }
+    const passwordValidate = (value) => {
+    
+        if(password !== value){
+            setPasswordErrorMessage('Confirm password does not match !');
+        }
+        else{
+            setPasswordErrorMessage('');
+        }
+    }
 
     useEffect(() => {
         if(localStorage.getItem('app-access-token')!=null){
@@ -70,6 +97,7 @@ export default function Register() {
     }
     return (
        <div className="contact-container">
+           <NavbarTop />
             <div  className="img-fluid background-img-full" >
                 <div className="bg-image-register">
                     <div className="set">
@@ -101,7 +129,7 @@ export default function Register() {
                 </div>
             </div>
             <div className="text-center"style={{zIndex:1}}>
-                <img src={Logo} className="img-fluid logo-image mb-4 ml-auto mr-auto" alt="Logo" />
+                <img src={logo} onMouseOver={()=>setLogo(LogoHover)} onMouseOut={()=>setLogo(Logo)} className="img-fluid logo-image mb-4 ml-auto mr-auto" alt="Logo" />
                 <h1 className="center-text  ml-auto mr-auto">One card to rule them all.</h1>
                 {/*  */}
                 <button className="btn btn-custom ml-auto mr-auto" onClick={handleShow}>SIGNUP</button>
@@ -111,7 +139,7 @@ export default function Register() {
                     <Modal.Body>
                             <div className="mt-3" style={{width:'100%',display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'center'}}>
                                 <div style={{width:'100%',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
-                                <img src={Logo} className="img-fluid " style={{width:120}} alt="Logo" />
+                                <img src={logo} onMouseOver={()=>setLogo(LogoHover)} onMouseOut={()=>setLogo(Logo)} className="img-fluid " style={{width:120}} alt="Logo" />
                                 <div className="container pt-4">
                                     {
                                         (error !== "")?(
@@ -134,10 +162,12 @@ export default function Register() {
                                             <input type="text" name="username" id="username" className="form-control register-inputs"  onChange={(event)=>setUsername(event.target.value)} placeholder="Username" />
                                         </div>
                                         <div className="form-group">
-                                            <input type="password" name="password" id="password" className="form-control register-inputs"  onChange={(event)=>setPassword(event.target.value)} placeholder="Password" />
+                                            <input type="password" name="password" id="password" minlength="8" className="form-control register-inputs"  onChange={(event)=>{setPassword(event.target.value);validate(event.target.value);}} placeholder="Password" />
+                                            {(errorMessage !== '')?( (errorMessage === 'Your password is strong')?( <small className="text-success ml-2">{errorMessage}</small>):( <small className="text-danger ml-2">{errorMessage}</small>)):('')}
                                         </div>
                                         <div className="form-group">
-                                            <input type="password" name="cpassword" id="cpassword" className="form-control register-inputs"  onChange={(event)=>setConfrim(event.target.value)} placeholder="Confirm Password" />
+                                            <input type="password" name="cpassword" id="cpassword" className="form-control register-inputs"  onChange={(event)=>{setConfrim(event.target.value);passwordValidate(event.target.value)}} placeholder="Confirm Password" />
+                                            {(cPassworErrorMessage !== '')?( <small className="text-danger ml-2">{cPassworErrorMessage}</small>):('')}
                                         </div>
                                         <div className="form-group">
                                             <input type="text" name="category" id="category" className="form-control register-inputs"  onChange={(event)=>setCategory(event.target.value)}  placeholder="Category" />

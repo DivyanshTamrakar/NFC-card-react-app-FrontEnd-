@@ -11,9 +11,10 @@ export default function Report() {
             <div className="contact">
             <div className="container mt-4 mt-lg-5">
                 <h2 className="mb-2 contact__heading">Report a violation</h2>
-                <p className='contact__para pt-2'><strong>Please use the form below to report a violation or an account you think we should review.</strong></p>
-                <p className='contact__para'><strong>Please use the form below to report a violation or an account you think we should review.</strong> You can view our Terms of Service here.
-                We take account violations very seriously, review all requests and take action if required.
+                <p className='contact__para pt-2'><strong>Know takes account violations very seriously. </strong></p>
+                <p className='contact__para'><strong>Please use the form below to report a violation or an account you think we should review.</strong> 
+                <br/>
+                 In the event of any violation one can report that by filling in a form provided in the platform which also provides for the terms and services of the platform
                 <br/>
                 <br/>
                 <strong>Please note this form is not for general support requests.</strong> If you need help with your own <strong>The Know Card</strong> account, please contact support on <a href="mailto:support@theknowcard">support@theknowcard</a> or visit our support portal.

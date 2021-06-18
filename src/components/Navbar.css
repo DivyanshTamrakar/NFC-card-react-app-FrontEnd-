@@ -1,6 +1,8 @@
 .navbar__logo {
+    position: absolute;
     object-fit: contain !important;
     width: 7rem;
+    top:8%
 }
 
 .navbar__height {

@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import './Navbar.css';
 import {Navbar,Nav } from 'react-bootstrap';
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/image-logo.png';
 import LogoHover from '../assets/Logo-name.png';
 import {  Link,useHistory } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ export default function NavbarTop() {
         <Navbar  expand="lg" className="navbar__height shadow-sm">
         <Navbar.Brand  className="pl-lg-3">
            <Link to="/">
-                <img src={logo} onMouseOver={()=>setLogo(LogoHover)} onMouseOut={()=>setLogo(Logo)} className="navbar__logo" alt="Logo"/>
+                <img src={logo} onMouseOver={()=>setLogo(LogoHover)} onMouseOut={()=>setLogo(Logo)} className="navbar__logo" alt="Know Card"/>
            </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -31,10 +31,10 @@ export default function NavbarTop() {
             <Nav className="ml-auto pr-lg-3 pt-3 pt-lg-0 pb-lg-0 pb-3  p-4 bg-white " >
                 <Nav.Link  className="mr-lg-5 pl-2 nav-text">
                     <Link to="/how-it-works" className="nav-text" style={{textDecoration:'none'}} >
-                        How It Works
+                        Help
                     </Link>
                 </Nav.Link>
-                <Nav.Link  className="mr-lg-5 pl-2 pl-lg-0 mb-2 mb-lg-0 nav-text" >
+                <Nav.Link  className="mr-lg-5 pl-2 pl-lg-0 mb-0 mb-lg-0 nav-text" >
                     <Link to="/pricing" className="nav-text" style={{textDecoration:'none'}} >
                         Pricing
                     </Link>
@@ -54,7 +54,7 @@ export default function NavbarTop() {
                         <> 
                             <Nav.Link  className="mr-lg-4 pl-2 pl-lg-0 mb-2 mb-lg-0 nav-text" >
                             <Link to="/signin" className="nav-text" style={{textDecoration:'none'}} >
-                                Login
+                                Sign In
                             </Link>
                             </Nav.Link>
                             <Nav.Link  >

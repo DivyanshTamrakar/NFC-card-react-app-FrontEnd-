@@ -156,21 +156,21 @@ export default function Register() {
                                     }
                                     <form  onSubmit={handleSubmit}>
                                         <div className="form-group">
-                                            <input type="email" name="email" id="email" className="form-control register-inputs" onChange={(event)=>setEmail(event.target.value)} placeholder="Email" />
+                                            <input type="email" name="email" id="email" className="form-control register-inputs" required={true} onChange={(event)=>setEmail(event.target.value)} placeholder="Email" />
                                         </div>
                                         <div className="form-group">
-                                            <input type="text" name="username" id="username" className="form-control register-inputs"  onChange={(event)=>setUsername(event.target.value)} placeholder="Username" />
+                                            <input type="text" name="username" id="username" className="form-control register-inputs"  required={true}  onChange={(event)=>setUsername(event.target.value)} placeholder="Username" />
                                         </div>
                                         <div className="form-group">
-                                            <input type="password" name="password" id="password" minlength="8" className="form-control register-inputs"  onChange={(event)=>{setPassword(event.target.value);validate(event.target.value);}} placeholder="Password" />
+                                            <input type="password" name="password" id="password" minlength="8" className="form-control register-inputs"  required={true}  onChange={(event)=>{setPassword(event.target.value);validate(event.target.value);}} placeholder="Password" />
                                             {(errorMessage !== '')?( (errorMessage === 'Your password is strong')?( <small className="text-success ml-2">{errorMessage}</small>):( <small className="text-danger ml-2">{errorMessage}</small>)):('')}
                                         </div>
                                         <div className="form-group">
-                                            <input type="password" name="cpassword" id="cpassword" className="form-control register-inputs"  onChange={(event)=>{setConfrim(event.target.value);passwordValidate(event.target.value)}} placeholder="Confirm Password" />
+                                            <input type="password" name="cpassword" id="cpassword" className="form-control register-inputs"  required={true}  onChange={(event)=>{setConfrim(event.target.value);passwordValidate(event.target.value)}} placeholder="Confirm Password" />
                                             {(cPassworErrorMessage !== '')?( <small className="text-danger ml-2">{cPassworErrorMessage}</small>):('')}
                                         </div>
                                         <div className="form-group">
-                                            <input type="text" name="category" id="category" className="form-control register-inputs"  onChange={(event)=>setCategory(event.target.value)}  placeholder="Category" />
+                                            <input type="text" name="category" id="category" className="form-control register-inputs"  required={true} onChange={(event)=>setCategory(event.target.value)}  placeholder="Category" />
                                         </div>
                                         <div className="form-group pt-1 text-center">
                                             <button className="btn-register" type="submit" disabled={disabled}>

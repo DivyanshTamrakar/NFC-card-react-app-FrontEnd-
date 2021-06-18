@@ -2,7 +2,7 @@
     background-image: url('../assets/footer-bg.png') !important;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: fit-content !important;
 }
 
@@ -19,12 +19,12 @@
 }
 
 .email_txt_field {
-    padding: 0.5rem;
+    padding: 0.75rem !important;
     width: 17rem;
     margin-right: 0.5rem;
-    background-color: transparent;
+    background-color: #fff !important;
     border: none;
-    border-bottom: 1px solid rgb(245, 245, 245);
+    border-radius: 5px;
     outline: none;
     box-shadow: none;
 }
@@ -75,29 +75,53 @@ p {
 }
 
 .footer-logo {
-    font-size: 1.7rem;
+    width: 12rem;
+    position: absolute;
+    bottom: 80%;
+    right: 27%;
 }
-
+.v-divider{
+    position: absolute;
+    height: 50%;
+    width: 2px;
+    right: 38%;
+    background-color: rgba(255, 255, 255, 0.638);
+}
 .btn-finiata-start {
     background-color: rgb(255, 102, 0) !important;
     width: 9rem !important;
     height: 45px;
     border: none;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
     padding: 0rem 0.5rem !important;
     color: white !important;
     border-radius: 5px;
+    text-align: center !important;
 }
 
 @media (max-width:768px) {
+    .v-divider{
+        display: none;
+        position: absolute;
+        height: 50%;
+        width: 2px;
+        right: 38%;
+        background-color: rgba(255, 255, 255, 0.638);
+    }
+    .footer-logo {
+        width: 12rem;
+        position: absolute;
+        bottom: 70%;
+        right: 27%;
+    }
     .btn-finiata-start {
         background-color: rgb(255, 102, 0) !important;
-        width: 6rem !important;
+        width: 7rem !important;
         height: 45px;
         border: none;
-        font-size: 0.7rem;
-        font-weight: 600;
+        font-size: 0.8rem !important; 
+        font-weight: 500 !important;
         padding: 0rem 0.4rem !important;
         color: white !important;
         border-radius: 5px;

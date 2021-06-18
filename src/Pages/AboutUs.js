@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutUs.css';
 import NavbarTop from '../components/NavbarTop';
 import Footer from '../components/Footer';
+import About from '../assets/about.png';
 
 export default function AboutUs() {
     return (
@@ -12,7 +13,7 @@ export default function AboutUs() {
                 <div className="container mt-5">
                     <h2 className="about__heading">About The Know Card</h2>
                     <p className="about__heading__paragraph">The Know Card makes your online content more discoverable, easier to manage and more likely to convert.</p>
-                    <img src="https://images.ctfassets.net/lbsm39fugycf/3emsRGxOE4TAQzNTjidgNE/367ae2d3805ff609f1c556f651529e20/linktree-office.jpg" className="img-fluid mt-4 about-image" alt="about"/>
+                    <img src={About} className="img-fluid mt-4 about-image" alt="about"/>
                     <p className="mt-5">
                         <h5 className="mb-3"><strong> We're a tool for connecting followers to your entire online world — not just one feed.</strong></h5> 
                         Know Card not only points followers in the direction of your choosing — to your other social profiles, eCommerce store, or content you want to share — but it helps hold followers within your online ecosystem for longer. It allows users to share more, sell more, curate more and grow more.

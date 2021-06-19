@@ -161,7 +161,7 @@ export default function Home() {
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times" /></span>Free Subdomain</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times" /></span>Monthly Status Reports</li>
                                 </ul>
-                                <a href="#" className="btn btn-block btn-primary text-uppercase">Button</a>
+                                <a href="/" className="btn btn-block btn-primary text-uppercase">Button</a>
                                 </div>
                             </div>
                             </div>
@@ -182,7 +182,7 @@ export default function Home() {
                                     <li><span className="fa-li"><i className="fa fa-check" /></span>Free Subdomain</li>
                                     <li className="text-muted"><span className="fa-li"><i className="fa fa-times" /></span>Monthly Status Reports</li>
                                 </ul>
-                                <a href="#" className="btn btn-block btn-primary text-uppercase">Button</a>
+                                <a href="/" className="btn btn-block btn-primary text-uppercase">Button</a>
                                 </div>
                             </div>
                             </div>
@@ -203,7 +203,7 @@ export default function Home() {
                                     <li><span className="fa-li"><i className="fa fa-check" /></span><strong>Unlimited</strong> Free Subdomains</li>
                                     <li><span className="fa-li"><i className="fa fa-check" /></span>Monthly Status Reports</li>
                                 </ul>
-                                <a href="#" className="btn btn-block btn-primary text-uppercase">Button</a>
+                                <a href="/" className="btn btn-block btn-primary text-uppercase">Button</a>
                                 </div>
                             </div>
                             </div>

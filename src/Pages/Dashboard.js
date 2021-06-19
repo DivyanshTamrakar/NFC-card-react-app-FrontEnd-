@@ -87,7 +87,7 @@ export default function Dashboard() {
           }
         })
         .then(response=>response.json())
-        .then(data=>(
+        .then(data=>((
           setFname(data.data.fname),
           setLname(data.data.lname),
           setPosition(data.data.position),
@@ -108,8 +108,8 @@ export default function Dashboard() {
           setUsername(data.data.username),
           setGreetFname(data.data.fname),
           localStorage.setItem("username",(data.data.fname+" "+data.data.lname))
-        ))
-
+        )))
+// eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
   const countryOption = countries.map((country,i)=>
       <option value={country.name} key={i}>{country.name}</option>
@@ -150,7 +150,7 @@ export default function Dashboard() {
           }
         })
         .then(response=>response.json())
-        .then(data=>(
+        .then(data=>((
           setFname(data.data.fname),
           setLname(data.data.lname),
           setPosition(data.data.position),
@@ -172,7 +172,7 @@ export default function Dashboard() {
           localStorage.setItem("username",(data.data.fname+" "+data.data.lname)),
           setLoading(false)
 
-        ))
+        )))
     )
 
   }

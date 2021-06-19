@@ -34,11 +34,12 @@ export default function MyAccount() {
             }
           })
           .then(response=>response.json())
-          .then(data=>(           
+          .then(data=>((           
             setEmail(data.data.email),
             setUsername(data.data.username)
-            )
+            ))
           )
+          // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     var submitForm = (event)=>{
@@ -57,10 +58,10 @@ export default function MyAccount() {
             })
           })
           .then(response=>response.json())
-          .then(data=>(           
+          .then(data=>((           
             setSaving(false),
             setMessage(data.message)
-            )
+            ))
           )
     }
     var handleSubmit = (event)=>{

@@ -6,7 +6,7 @@ import {useHistory} from 'react-router-dom';
 import  DashNav from "../components/DashNav";
 
 export default function Analytics() {
-    const [dataAnalytics,setAnalyticsData] = useState({
+    const [dataAnalytics] = useState({
         series: [{
           name: 'Income',
           type: 'column',
@@ -63,6 +63,7 @@ export default function Analytics() {
         if(localStorage.getItem('app-access-token')===null){
             history.push("/signin");
          }
+         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
     return (
         <>

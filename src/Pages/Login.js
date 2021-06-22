@@ -1,7 +1,5 @@
 import React,{useState,useEffect} from 'react';
 import './Login.css';
-import {Navbar} from 'react-bootstrap';
-import Logo from '../assets/Logo.png';
 import {Link} from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
 import {URL} from '../config/config';
@@ -17,6 +15,7 @@ export default function Login() {
         if(localStorage.getItem('app-access-token')!=null){
             history.push("/admin");
          }
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     var handleSubmit = (event)=>{
         event.preventDefault();

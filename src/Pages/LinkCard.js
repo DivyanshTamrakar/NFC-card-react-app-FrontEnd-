@@ -52,12 +52,12 @@ export default function LinkCard() {
         }
       })
       .then(response=>response.json())
-      .then(data=>(
+      .then(data=>((
         setProfileType(data.data.profile_type),
         setProfile(data.data.profile),
         setUsername(data.data.username)
-      ));
-
+      )));
+// eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     const removeCards = (id) => {
         const requestOptionsDelete = {

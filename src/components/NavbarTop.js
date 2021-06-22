@@ -3,13 +3,12 @@ import './Navbar.css';
 import {Navbar,Nav } from 'react-bootstrap';
 import Logo from '../assets/image-logo.png';
 import LogoHover from '../assets/Logo-name.png';
-import {  Link,useHistory } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 export default function NavbarTop() {
     const [logo,setLogo]=useState(Logo);
     const [loggedin,setLoggedIn]=useState(false);
     const [username,setUsername] = useState("My Account");
-    const history = useHistory();
     useEffect(() => {
         if(localStorage.getItem('app-access-token')===null){
             setLoggedIn(false);

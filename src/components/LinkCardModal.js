@@ -28,7 +28,7 @@ export default function LinkCardModal({Image,name,color,bgImage}) {
         };
         fetch(`${URL}/cards/add-card`, requestOptions)
         .then(response => (response.status === 401)?(response.statusText):( response.json()))
-        .then(data => (setMessage(data.message),setSaving(false)))
+        .then(data => ((setMessage(data.message),setSaving(false))))
     }
     return (
         <>

@@ -52,11 +52,11 @@ export default function ProfileScreens(props) {
                 }
             })
             .then(response => response.json())
-            .then(data => (
+            .then(data => ((
                 setCardData(data.data),
                 // console.log(data),
                 setLoading(false)
-                )
+                ))
             )
             .catch(err=>console.log(err))
             )
@@ -64,12 +64,7 @@ export default function ProfileScreens(props) {
            
          )
         .catch(err=>console.log(err))
-
-        // console.log("Profile Without Data "+profile)
-        // console.log("Cards Without Data "+cardData)
-        // console.log("Route Params "+params.slug)
-        
-    
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     
    

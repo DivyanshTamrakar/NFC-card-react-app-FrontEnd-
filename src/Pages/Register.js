@@ -62,6 +62,7 @@ export default function Register() {
         if(localStorage.getItem('app-access-token')!=null){
             history.push("/admin");
          }
+// eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     var handleSubmit = (event)=>{
         event.preventDefault();

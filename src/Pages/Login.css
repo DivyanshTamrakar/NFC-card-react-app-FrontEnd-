@@ -3,6 +3,9 @@
     width: 100%;
     background: linear-gradient(to bottom, #fff, #edecec) !important;
     overflow-y: hidden;
+    position: fixed;
+    
+    
 }
 
 .panel h2 {

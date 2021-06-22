@@ -255,45 +255,28 @@ export default function Pricing() {
                         </td>
                         
                     </tr>
+
                     <tr>
-                        <th scope="row"> <h3 className="d-block">Martech </h3> <span className="font-weight-light"></span> </th>
-                      
-                        
-                    </tr>
-                    <tr>
-                        <th scope="row"> <span className="d-block">Mail chimp</span> <span className="font-weight-light">Get email signups directly from Know </span> </th>
+                        <th scope="row"> <span className="d-block">Custom link card & icons </span> <span className="font-weight-light">Know allows one to identify the job done by another</span> </th>
                         <td> </td>
                         <td> 
                         <div className="text-center check"> <i className="fa fa-check" /> </div>
                         </td>
+                         
                         <td>
                         <div className="text-center check"> <i className="fa fa-check" /> </div>
                         </td>
                         
                     </tr>
                     <tr>
-                        <th scope="row"> <span className="d-block">Facebook Pixel</span> <span className="font-weight-light">Target your Know visitors on Instagram and Facebook again through your Facebook Pixel</span> </th>
+                        <th scope="row"> <span className="d-block">Free replacement card </span> <span className="font-weight-light">Know allows one to identify the job done by another</span> </th>
                         <td> </td>
-                        <td> 
-                        <div className="text-center check"> <i className="fa fa-check" /> </div>
-                        </td>
+                        <td> </td>
                         <td>
                         <div className="text-center check"> <i className="fa fa-check" /> </div>
                         </td>
                         
                     </tr>
-                    <tr>
-                        <th scope="row"> <span className="d-block">Google Sheets</span> <span className="font-weight-light">Allows your email and SMS subscribers flow directly into Google sheets from your Know</span> </th>
-                        <td> </td>
-                        <td> 
-                        <div className="text-center check"> <i className="fa fa-check" /> </div>
-                        </td>
-                        <td>
-                        <div className="text-center check"> <i className="fa fa-check" /> </div>
-                        </td>
-                        
-                    </tr>
-                  
                     </tbody>
                 </table>
                 </div>

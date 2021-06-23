@@ -1,1 +1,1 @@
-export const URL = "http://nfc-api.ap-south-1.elasticbeanstalk.com";
+export const URL = "http://know-apis.herokuapp.com";
